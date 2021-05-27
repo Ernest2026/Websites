@@ -48,7 +48,6 @@ I want to learn to use all unit like px, em, rem, % perfectly and know when and 
 
 ## Author
 
-- Website - [Ernest](404 Still working on the site😁)
 - Frontend Mentor - [@Ernest2026](https://www.frontendmentor.io/profile/Ernest2026/)
 - Twitter - [@ChidiebereErne4](https://www.twitter.com/ChidiebereErne4)
 
