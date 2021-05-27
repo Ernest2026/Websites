@@ -505,7 +505,7 @@ h6 {
     }
     
     .col-a .section-a .sec-a {
-        padding: 14rem 0;
+        padding: 16rem 0;
         flex: calc(47% - 8rem);
         
         text-align: unset;
