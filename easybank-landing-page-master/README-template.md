@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Easybank landing page](https://github.com/Ernest2026/Websites/Easybank-Landing-Page/)
-- Live Site URL: [Easybank landing page](https://your-live-site-url.com)
+- Solution URL: [Easybank landing page](https://github.com/Ernest2026/Websites/easybank-landing-page-master/)
+- Live Site URL: [Easybank landing page](https://w-e-b.netlify.app/easybank-landing-page-master/)
 
 ## My process
 
