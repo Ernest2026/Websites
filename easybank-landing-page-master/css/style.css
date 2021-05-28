@@ -37,6 +37,18 @@ html {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .nav {
     background-color: var(--White);
     padding: 2.5rem 5rem;
@@ -109,7 +121,7 @@ html {
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     opacity: 0.8;
     box-shadow: 3px 3px 5px 0px hsl(233, 8%, 62%,0.8);
     -webkit-box-shadow: 3px 3px 5px 0px hsl(233, 8%, 62%,0.8);
@@ -189,8 +201,11 @@ html {
     padding: 2rem 0;
 }
 
-.col-b .section-b h5 {
+.col-b .section-b p {
     color: var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
 }
 
 .col-c {
@@ -224,10 +239,12 @@ html {
     margin: 2rem;
 }
 
-.col-c .section-a .sec-a h5 {
+.col-c .section-a .sec-a p {
     color: var(--Grayish-Blue);
     font-size: 1.4rem;
     margin: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
 }
 
 .col-c .section-a .sec-a h4 {
@@ -280,12 +297,12 @@ html {
     transition: 0.5s;
 }
 
-.footer .section-a .sec-b h5 {
+.footer .section-a .sec-b p {
     margin-bottom: 1rem;
     color: var(--Light-Grayish-Blue);
 }
 
-.footer .section-a .sec-c h5 {
+.footer .section-a .sec-c p {
     color: var(--Grayish-Blue);
 }
 
@@ -297,11 +314,11 @@ html {
     margin: 1rem 0;
 }
 
-.footer .section-a h5 {
+.footer .section-a p {
     font-size: 1.5rem;
 }
 
-.footer .section-a .sec-b h5:hover {
+.footer .section-a .sec-b p:hover {
     color: var(--Lime-Green);
     transition: 0.5s;
     cursor: pointer;
@@ -347,6 +364,12 @@ h4 {
 }
 
 h5 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+p {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -505,7 +528,7 @@ h6 {
     }
     
     .col-a .section-a .sec-a {
-        padding: 18rem 0;
+        padding: 16rem 0;
         flex: calc(47% - 8rem);
         
         text-align: unset;
