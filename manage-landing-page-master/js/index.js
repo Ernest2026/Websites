@@ -37,7 +37,7 @@ document.querySelector(".icon").addEventListener("click", function () {
 
 
 // ===== Animation on Scroll =====
-/* var o = 0;
+var o = 0;
 var show = document.querySelectorAll(".remove-class");
 
 for (o = 0; o < show.length; o++) {
@@ -81,7 +81,7 @@ rect.top <= (window.innerHeight || document.documentElement.clientHeight))
 (rect.top >= 0 &&
 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
 );
-} */
+}
 
 
 
