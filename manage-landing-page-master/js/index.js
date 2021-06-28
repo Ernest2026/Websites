@@ -1,270 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+// ===== Nav toggle =====
+document.querySelector(".icon").addEventListener("click", function () {
+    document.getElementById("dropdown").classList.toggle("show");
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    if (document.getElementById("dropdown").classList.contains("show") == false) {
+        document.getElementById("icon").setAttribute("src", "images/icon-hamburger.svg");
+    } else {
+        document.getElementById("icon").setAttribute("src", "images/icon-close.svg");
+    }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/style.css">
-  
-  <title>Frontend Mentor | Manage landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
-
-  <div class="fluid-container">
+});
 
 
-    <img src="images/bg-tablet-pattern.svg" alt="" class="img-design-a">
+  // ===== Email Validation =====
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 
-  <div class="nav">
-    <div class="container">
-    <div class="section">
-      <div class="logo">
-        <img src="images/logo.svg" alt="" class="web-logo">
-      </div>
-  
-      <div class="list" id="dropdown">
-        <a href="#" class="link">Pricing</a>
-        <a href="#" class="link">Product</a>
-        <a href="#" class="link">About Us</a>
-        <a href="#" class="link">Careers</a>
-        <a href="#" class="link">Community</a>
-      </div>
-        
-      <button class="button">Get Started</button>
-      <button class="icon"><img src="images/icon-hamburger.svg" alt="" id="icon"></button>
-    </div>
-  </div>
-  </div>
-
-  
-
-
-  <div class="col-a">
-    <div class="container">
-      <div class="section-a show-on-scroll">
-        <div class="sec-a">
-          <h1 class="opacity remove-class">Bring everyone together to build better products.</h1>
-
-          <p class="opacity remove-class">Manage makes it simple for software teams to plan day-to-day 
-            tasks while keeping the larger team goals in view.</p>
-        
-          <button class="button opacity remove-class">Get Started</button>
-      </div>
-
-      <div class="sec-b">
-        <img src="images/illustration-intro.svg" alt="" class="img opacity remove-class">
-      </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-
-
-  <div class="col-b">
-
-    <img src="images/bg-tablet-pattern.svg" alt="" class="img-design-b">
-
-    <div class="container">
-      <div class="section-a">
-        <div class="sec-a show-on-scroll">
-          <h2 class="opacity remove-class">What’s different about Manage?</h2>
-
-          <p class="opacity remove-class">Manage provides all the functionality your team needs, without 
-          the complexity. Our software is tailor-made for modern digital 
-          product teams.</p>
-        </div>
-        
-      <div class="sec-b show-on-scroll">
-        <div class="item opacity remove-class">
-          <div class="item-header">
-            <span class="number">01</span>
-            <h4>Track company-wide progress</h4>
-          </div>
-          <p>See how your day-to-day tasks fit into the wider vision. Go from 
-          tracking progress at the milestone level all the way done to the 
-          smallest of details. Never lose sight of the bigger picture again.</p>
-        </div>
-              
-        <div class="item opacity remove-class">
-          <div class="item-header">
-            <span class="number">02</span>
-            <h4>Advanced built-in reports</h4>
-          </div>
-          <p>Set internal delivery estimates and track progress toward company 
-          goals. Our customisable dashboard remove-classs you build out the reports 
-          you need to keep key stakeholders informed.</p>
-        </div>
-              
-        <div class="item opacity remove-class">
-          <div class="item-header">
-            <span class="number">03</span>
-            <h4>Everything you need in one place</h4>
-          </div>
-          <p>Stop jumping from one service to another to communicate, store files, 
-          track tasks and share documents. Manage offers an all-in-one team 
-          productivity solution.</p>
-        </div>
-        
-      </div>
-        
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="col-c">
-    <div class="container">
-      <div class="section-a">
-        <div class="sec-a show-on-scroll">
-          <h2 class="opacity remove-class">What they’ve said</h2>
-        </div>
-
-        <div class="sec-b show-on-scroll">
-          <div class="slides opacity remove-class">
-            <img src="images/avatar-anisha.png" alt="" class="img">
-            <h4>Anisha Li</h4>
-            <p>“Manage has supercharged our team’s workflow. The ability to maintain 
-            visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-          
-        <div class="slides opacity remove-class">
-          <img src="images/avatar-ali.png" alt="" class="img">
-          <h4>Ali Bravo</h4>
-          <p>“We have been able to cancel so many other subscriptions since using 
-          Manage. There is no more cross-channel confusion and everyone is much 
-          more focused.”</p>
-        </div>
-          
-        <div class="slides opacity remove-class">
-          <img src="images/avatar-richard.png" alt="" class="img">
-          <h4>Richard Watts</h4>
-          <p>“Manage allows us to provide structure and process. It keeps us organized 
-          and focused. I can’t stop recommending them to everyone I talk to!”</p>
-        </div>
-          
-        <div class="slides opacity remove-class">
-          <img src="images/avatar-shanai.png" alt="" class="img">
-          <h4>Shanai Gough</h4>
-          <p>“Their software allows us to track, manage and collaborate on our projects 
-          from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-        </div>
-          
-        <div class="dot">
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-        </div>
-        </div>
-
-        <div class="sec-c show-on-scroll">
-          <button class="button opacity remove-class">Get Started</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  
-  <div class="col-d">
-    <div class="container">
-      <div class="section-a show-on-scroll">
-        <div class="sec-a">
-          <p class="opacity remove-class">Simplify how your team works today.</p>
-        </div>
-        <div class="sec-b">
-          <button class="button opacity remove-class">Get Started</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  
-
-  <div class="footer">
-    <div class="container">
-      <div class="contain show-on-scroll">
-      <div class="section">
-        <div class="sec-a opacity remove-class">
-
-          <p class="">Copyright 2020. All Rights Reserved</p>
-
-          <div class="img">
-            <img src="images/logo-white.svg" alt="" class="web-logo">
-          </div>
-            
-
-            <div class="media-icon">
-
-              <a href="#"><i class="fa sm-icon fa-facebook-official"></i></a>
-              <a href="#"><i class="fa sm-icon fa-youtube-play"></i></a>
-              <a href="#"><i class="fa sm-icon fa-twitter"></i></a>
-              <a href="#"><i class="fa sm-icon fa-pinterest"></i></a>
-              <a href="#"><i class="fa sm-icon fa-instagram"></i></a>
+  function validate() {
+      const errMsg = document.querySelector(".error-msg");
+      const email = document.getElementById("email").value;
       
-              </div>
+      if (validateEmail(email)) {
+          if (errMsg.innerHTML !== "") {
+              errMsg.innerHTML = "";
+          }
+      } else {
+        document.querySelector('input[type=text]').style.setProperty("--c", "red");
+          errMsg.innerHTML = "Please insert a valid email";
+      }
+      return false;
+  }
 
-              
-        </div>
-
-        <div class="sec-b opacity remove-class">
-          <div class="item">
-            <a href="#">Home</a>
-            <a href="#">Pricing</a>
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
-          </div>
-          
-          
-          <div class="item">
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
-            <a href="#">Privacy Policy</a>
-          </div>
-          
-        </div>
-
-        <div class="sec-c opacity remove-class">
-          <div class="item">
-            <form action="#">
-              <input type="text" placeholder="Updates in your inbox…" id="email">
-              <input type="submit" class="button" id="validate" value="Go">
-
-            </form>
-
-          <p class="error-msg"></p>
-        
-          <p class="copyright">Copyright 2020. All Rights Reserved</p>
-        </div>
-        </div>
-      </div>
-
-        <div class="attribution opacity remove-class">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://www.twitter.com/Ernesto_13355">Ernesto</a>.
-        </div>
-      </div>
-      
-      
-
-    </div>
-  </div>
+  document.getElementById("validate").addEventListener("click", validate);
 
 
-  
-  
 
-  <script src="js/index.js"></script>
-</body>
-</html>
+// ===== Animation on Scroll =====
+var o = 0;
+var show = document.querySelectorAll(".remove-class");
+
+for (o = 0; o < show.length; o++) {
+    document.querySelectorAll(".remove-class")[o].classList.remove("opacity");
+}
+
+
+var scroll = window.requestAnimationFrame ||
+
+function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+Array.prototype.forEach.call(elementsToShow, function(element){
+if (isElementInViewport(element)) {
+element.classList.add('is-visible');
+} else {
+element.classList.remove('is-visible');
+}
+});
+
+scroll(loop);
+}
+
+loop();
+
+function isElementInViewport(el) {
+
+if (typeof jQuery === "function" && el instanceof jQuery) {
+el = el[0];
+}
+var rect = el.getBoundingClientRect();
+return (
+(rect.top <= 0
+&& rect.bottom >= 0)
+||
+(rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+||
+(rect.top >= 0 &&
+rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+);
+}
+
+
+
+// ===== Slideshow =====
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("circle");
+    var x = window.matchMedia("(max-width: 899px)")
+    
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+
+    if (x.matches) {
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+      } else {
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "block";
+            }
+            slides[slideIndex-1].style.display = "none";
+      }
+
+      x.addListener(showSlides);
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+}
