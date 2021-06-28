@@ -37,6 +37,14 @@ document.querySelector(".icon").addEventListener("click", function () {
 
 
 // ===== Animation on Scroll =====
+var o = 0;
+var show = document.querySelectorAll(".remove-class");
+
+for (o = 0; o < show.length; o++) {
+    document.querySelectorAll(".remove-class")[o].classList.remove("opacity");
+}
+
+
 var scroll = window.requestAnimationFrame ||
 
 function(callback){ window.setTimeout(callback, 1000/60)};
