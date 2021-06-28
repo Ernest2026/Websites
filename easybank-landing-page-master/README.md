@@ -4,7 +4,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -16,14 +15,16 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
+
+### Screenshot
+
+![](./design/desktop-design.jpg)
 
 ### Links
 
@@ -48,9 +49,9 @@ I want to learn to use all unit like px, em, rem, % perfectly and know when and 
 
 ## Author
 
-- Frontend Mentor - [@Ernest2026](https://www.frontendmentor.io/profile/Ernest2026/)
-- Twitter - [@ChidiebereErne4](https://www.twitter.com/ChidiebereErne4)
+- Frontend Mentor - [@Ernesto](https://www.frontendmentor.io/profile/Ernest2026/)
+- Twitter - [@Ernesto](https://www.twitter.com/Ernesto_13355)
 
 ## Acknowledgments
 
-I actually did the landing page myself, and with some little research online...
+I actually did the landing page myself with some little research online...
