@@ -12,15 +12,25 @@
 }
 
 @font-face {
-    font-family: PublicSans;
-    src: url(../font/PublicSans-VariableFont_wght.ttf);
+    font-family: PsBold;
+    src: url(../font/PublicSans-Bold.ttf);
+ }
+
+@font-face {
+    font-family: PsRegular;
+    src: url(../font/PublicSans-Regular.ttf);
+ }
+
+@font-face {
+    font-family: PsLight;
+    src: url(../font/PublicSans-Light.ttf);
  }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: PublicSans;
+    font-family: PsRegular;
 }
 
 html {
@@ -79,7 +89,6 @@ button {
     width: 80%;
     border-radius: 1.5rem;
     padding: 5rem;
-    font-weight: 400;
     color: var(--Grayish-Blue);
     margin: 0 auto;
     list-style-type: none;
@@ -116,7 +125,6 @@ button {
     background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
     padding: 1rem 2rem;
     border-radius: 2.5rem;
-    font-weight: 400;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -203,7 +211,6 @@ button {
 
 .col-b .section-b p {
     color: var(--Grayish-Blue);
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
@@ -243,7 +250,6 @@ button {
     color: var(--Grayish-Blue);
     font-size: 1.4rem;
     margin: 2rem;
-    font-weight: 400;
     line-height: 2.5rem;
 }
 
@@ -334,7 +340,7 @@ button {
 }
 
 h1 {
-    font-weight: 400;
+    font-family: PsBold;
     font-size: 5.5rem;
 }
 
@@ -348,29 +354,25 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
     font-size: 4rem;
 }
 
 h3 {
-    font-weight: 400;
     font-size: 2.2rem;
 }
 
 h4 {
-    font-weight: 400;
     font-size: 2rem;
     line-height: 2.5rem;
 }
 
 h5 {
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
 
 p {
-    font-weight: 400;
+    font-family: PsLight;
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
@@ -465,7 +467,7 @@ h6 {
     }
     
     .nav-list {
-        font-weight: 300;
+        font-family: PsLight;
         color: var(--Grayish-Blue);
         list-style-type: none;
         font-size: 1.5rem;
