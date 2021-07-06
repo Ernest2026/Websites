@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica&display=swap');
+
+:root {
+    --facebook-header: #1877F2;
+    --facebook-button-b: #42B72A;
+    --facebook-button-a: #69A74E;
+    --facebook-body: #ECEFF5;
+    --notice-yellow: #FFFBE2;
+    --notice-border: #E2C822;
+    --login-button: #4267B2;
+    --footer-grey: #444950;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.none-n {
+    display: none;
+}
+.show-n {
+    display: block;
+}
+.none-p {
+    display: none;
+}
+.show-p {
+    display: block;
+}
+body {
+    font-family:Helvetica, Arial, sans-serif;
+}
+.button {
+    background-color: #00A400;
+    height: 40px;
+    margin: 8px 0px;
+    padding: 0px 28px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.money {
+    background-color: purple;
+}
+.error {
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    /* padding: 8px; */
+}
+.errorSm {
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 8px;
+}
+.bold {
+    font-weight: bold;
+}
+.namered {
+    border-color: red!important;
+    /* background-color: #F0F2F5!important; */
+}
+/* .passwordred {
+    background-color: #F0F2F5!important;
+} */
+.footer {
+    padding: 8px;
+    font-size: 12px;
+    color: #727384;
+}
+.title {
+    text-align: center;
+    padding: 32px;
+    color: #1C1E21;
+}
+.lg-footer {
+    padding: 30px 37px;
+    font-size: 12px; 
+    background-color: white;
+}
+.body {
+    padding-bottom: 30px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration-line: underline;
+}
+.d:hover, .d:link, .d:visited, .d:active {
+    color: #576B95;
+}
+.e:hover, .e:link, .e:visited, .e:active {
+    color: #90949C;
+}
+.ul {
+    list-style-type: none;
+    margin: 0px 8px;
+    padding: 0;
+  }
+  
+.li {
+    display: inline;
+  }
+  .lil {
+    display: inline;
+  }
+.left {
+    width: 50%;
+    float: left;
+    height: 80px;
+    color: #576B95;
+    text-align: center;
+}
+.right {
+    width: 50%;
+    float: right;
+    height: 80px;
+    color: #576B95;
+    text-align: center;
+}
+.tryin {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: #808080;
+    font-size: 12px;
+}
+.notify {
+    background-color: #E6F2FF;
+    padding: 8px;
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: #6EADFF;
+    color: #3B5998;
+}
+.notice {
+    display: flex;
+    width: 100%;
+    background-color: var(--notice-yellow);
+    border-color: var(--notice-border);
+    padding: 8px;
+}
+.top {
+    padding: 8px;
+    font-size: 15px;
+    color: #3B5998;
+}
+.form  {
+    margin: 8px;
+}
+.centered {
+    text-align: center;
+    color: #828282;
+}
+.width-a {
+    font-family: inherit;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline-color: #E9AF3E;
+    background-color: #F5F6F7;
+}
+.width-c {
+    /* font-family: inherit; */
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-top: 8px;
+    padding: 8px;
+    outline-color: #E9AF3E;
+    border-radius: 5px;
+    background-color: var(--facebook-header);
+    border: none;
+    color: #FFFFFF;
+}
+.width-b {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline-color: #E9AF3E;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #F5F6F7;
+}
+.input-container {
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+}
+.sm-header {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--facebook-header);
+    padding: 8px;
+}
+.header {
+    margin: auto;
+    padding: 16px;
+    display: none;
+    width: 400px;
+}
+.fm-text {
+    padding: 16px 8px;
+    font-size: 12px;
+    color: var(--facebook-header);
+    font-weight: bold;
+    text-align: center;
+    height: 45px;
+    background-color: #F5F6F7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+.login {
+    background-color: var(--facebook-header);
+    border: none;
+}
+.sm-fg-pwd {
+    color: #7596C8;
+    font-family: "Roboto-Regular","Helvetica","sans-serif";
+    font-size: 14px;
+    margin-top: 10px;
+}
+.lg-fg-pwd {
+    /* margin-top: 10px; */
+    color: #3D5998;
+}
+.hr {
+    width: 45%;
+    display: inline-block;
+    background-color: #CCD0D5;
+}
+.ft-hr {
+    width: 100%;
+}
+.mg-8 {
+    margin: 0px 8px;
+}
+.pd-4 {
+    padding-top: 4px;
+    }
+.pd-4:hover {
+    text-decoration: underline;
+}
+.pd-4-bold {
+    font-weight: bold;
+    padding-top: 4px;
+    color: #90949C;
+}
+.c {
+    color: #737373;
+}
+.lst-msg {
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #828282;
+}
+.display {
+    display: none;
+}
+.mg-6 {
+    margin: 8px 0px;
+}
+.mg-9 {
+    margin: 16px 0px;
+    color: #8A8D9F;
+}
+@media screen and (min-width: 900px) {
+    .notice, .ul, .footer, .tryin {
+        display: none;
+    }
+    body {
+        background-color: #F0F2F5;
+    }
+    .body {
+        background-color:white;
+        width: 400px;
+        /* height: 350px; */
+        height: auto;
+        /* margin: auto; */
+        padding: 8px;
+        border-radius: 8px;
+    }
+    /* .header {
+        display: block;
+        padding: 0;
+        margin: 0;
+    } */
+    .header {
+        /* margin: auto; */
+        padding: none;
+        display: block;
+        margin-top: 60px;
+        /* margin-right: 50px; */
+        min-width: 550px;
+    }
+    .error {
+        background-color: white;
+        color: red;
+        /* margin: 8px 0 8px 0; */
+    }
+    .errorSm {
+        background-color: white;
+        color: red;
+        /* margin: 8px 0 8px 0; */
+    }
+    .green {
+        background-color: green;
+    }
+    .black {
+        background-color: black;
+    }
+    .sm-header {
+        display: none;
+    }
+    .a:hover, .a:visited, .a:link, .a:active {
+        color: #8a8d91;
+    }
+    .b:hover, .b:visited, .b:link, .b:active {
+        color: black;
+    }
+    .c:hover, .c:visited, .c:link, .c:active {
+        color: #188CF5;
+    }
+    .sm-fg-pwd {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .undisplay {
+        display: none;
+    }
+    .width-a {
+        margin-bottom: 8px;
+        padding: 14px 16px;
+        font-size: 17px;
+        height: 50px;
+        background-color: white;
+        outline: none;
+        border: 1px solid #dddfe2;
+    }
+    .width-b {
+        margin-bottom: 8px;
+        padding: 14px 16px;
+        font-size: 17px;
+        border: 1px solid #dddfe2;
+        height: 50px;
+        background-color: white;
+        outline: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .width-c {
+        margin-top: 8px;
+        height: 50px;
+        outline: none;
+        font-size: 20px;
+    }
+    .button {
+        height: 50px;
+        margin: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 16px;
+        background-color: var(--facebook-button-b);
+    }
+    .button:hover {
+        background-color: #36A420;
+    }
+    .lg-fg-pwd {
+        margin-top: 20px;
+    }
+    .mg-8 {
+        margin: 3px;
+    }
+    .li {
+        line-height: 1.34;
+        padding-right: 12px;
+    }
+    .lg-footer {
+        padding: 30px 35px;
+    }
+    .floating {
+        float: right;
+        margin: auto;
+    }
+    .flex {
+        display: flex;
+        padding: 130px 40px 160px 30px;
+        /* padding-bottom: 160px; */
+    }
+    .header-a {
+        font-weight: bold;
+        font-size: 55px;
+        color: var(--facebook-header);
+        margin-bottom: 10px;
+    }
+    .fblogo {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .header-b {
+        /* text-align: justify; */
+        font-size: 28px;
+        color: #1C1E21; 
+    }
+    .title {
+        padding: 32px 0px;
+    }
+    }
+@media screen and (min-width: 505px) and (max-width: 900px) {
+    .notice, .ul, .footer, .tryin {
+        display: none;
+    }
+    .undisplay {
+        display: none;
+    }
+    .error {
+        background-color: white;
+        color: red;
+        /* margin: 8px 0 8px 0; */
+    }
+    .errorSm {
+        background-color: white;
+        color: red;
+        /* margin: 8px 0 8px 0; */
+    }
+    body {
+        background-color: #F0F2F5;
+    }
+    .body {
+        background-color:white;
+        max-width: 400px;
+        /* height: 350px; */
+        height: auto;
+        margin: auto;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .center {
+        text-align: center;
+    }
+    .a:hover, .a:visited, .a:link, .a:active {
+        color: #8a8d91;
+    }
+    .b:hover, .b:visited, .b:link, .b:active {
+        color: black;
+    }
+    .c:hover, .c:visited, .c:link, .c:active {
+        color: #188CF5;
+    }
+    .header {
+        display: block;
+    }
+    .header-a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 55px;
+        color: var(--facebook-header);
+        padding: 35px;
+        padding-bottom: 10px;
+    }
+    .fblogo {
+        margin: 3.5rem 0 1rem 0;
+        text-align: center;
+    }
+    .header-b {
+        text-align: center;
+        font-size: 25px;
+        color: #1C1E21;
+    }
+    .sm-header {
+        display: none;
+    }
+    .sm-fg-pwd {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .width-a {
+        margin-bottom: 8px;
+        padding: 14px 16px;
+        font-size: 17px;
+        height: 50px;
+        background-color: white;
+        outline: none;
+        color: #1d2129;
+        border: 1px solid #dddfe2;
+    }
+    .width-b {
+        margin-bottom: 8px;
+        padding: 14px 16px;
+        font-size: 17px;
+        border: 1px solid #dddfe2;
+        height: 50px;
+        color: #1d2129;
+        background-color: white;
+        outline: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .width-c {
+        margin-top: 8px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .button {
+        height: 50px;
+        margin: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0px 16px;
+        background-color: var(--facebook-button-b);
+    }
+    .button:hover {
+        background-color: #36A420;
+    }
+    .lg-fg-pwd {
+        margin-top: 20px;
+    }
+    .mg-8 {
+        margin: 3px;
+    }
+    .li {
+        line-height: 1.34;
+        padding-right: 10px;
+    }
+    }
