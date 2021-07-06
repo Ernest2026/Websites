@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  
+<div class="container">
+  
+  <div class="col-a">
+    <div class="section-a" id="bgSlides">
+      <div class="cover">
+      <div class="nav" id="nav">
+        
+        <button onclick="toggleNav()"><img src="images/icon-hamburger.svg" alt="menu" class="menu show" id="menu"></button>
+        <img src="images/logo.svg" alt="room" class="logo" id="logo">
+        <div class="empty" id="empty"></div>
+      <div class="nav-text" id="nav-text">
+        <a href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+      </div>
+      
+
+      <div class="button show" id="change">
+        <button class="direction" onclick="changeSlide(-1)"><img src="images/icon-angle-left.svg" alt=""></button>
+        <button class="direction" onclick="changeSlide(-1)"><img src="images/icon-angle-right.svg" alt=""></button>
+      </div>
+    </div>
+      </div>
+      <div class="" id="blur"></div>
+    <div class="section-b">
+      <div class="mySlides">
+        
+        <h2>Discover innovative ways to decorate</h2>
+    
+        <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.</p>
+        <span id="link"><a href="#" id="link">Shop now<img src="images/icon-arrow.svg" alt="" class="arrow" id="arrow"></a></span>
+      </div>
+      <div class="mySlides">
+        <h2>We are available all across the globe</h2>
+
+        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+        store locator. Any questions? Don't hesitate to contact us today.</p>
+        <span id="link"><a href="#" id="link">Shop now<img src="images/icon-arrow.svg" alt="" class="arrow" id="arrow"></a></span>
+      </div>
+      <div class="mySlides">
+        <h2>Manufactured with the best materials</h2>
+
+        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+          experience in this industry, we understand what customers want for their home and office.</p>
+        <span id="link"><a href="#" id="link">Shop now<img src="images/icon-arrow.svg" alt="" class="arrow" id="arrow"></a></span>
+      </div>
+      
+
+      
+    
+      
+
+      <div class="button hide">
+        <button class="direction" onclick="changeSlide(-1)"><img src="images/icon-angle-left.svg" alt=""></button>
+        <button class="direction" onclick="changeSlide(1)"><img src="images/icon-angle-right.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-b">
+    <div class="section-a">
+      <img src="images/image-about-dark.jpg" alt="" class="img">
+    </div>
+    <div class="section-b">
+      <h4>About our furniture</h4>
+    
+      <p>Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.</h4>
+    </div>
+    <div class="section-c">
+      <img src="images/image-about-light.jpg" alt="" class="img">
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</div>
+
+<!-- <div class="cover">
+<div class="try">
+  <h1> </h1>
+</div>
+</div> -->
+
+<script src="js/main.js"></script>
+  <script>
+    console.log(screen.height);
+    console.log(screen.width);
+  </script>
+</body>
+</html>

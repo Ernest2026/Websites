@@ -1,0 +1,400 @@
+:root {
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+@font-face {
+    font-family: Spartan;
+    src: url(../font/Spartan-VariableFont_wght.ttf);
+ }
+
+html {
+    font-size: 9px;
+    background-color: var(--Dark-Gray);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Spartan;
+}
+
+button {
+    outline: none;
+    border: none;
+    display: inline;
+    background-color: unset;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none!important;
+}
+
+.show {
+    display: initial!important;
+}
+
+.bg-white {
+    background-color: var(--White);
+}
+
+.blur {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.opacity {
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.mySlides {
+    display: none;
+}
+
+.bg-1 {
+    background-image: url(../images/desktop-image-hero-1.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-2 {
+    background-image: url(../images/desktop-image-hero-2.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-3 {
+    background-image: url(../images/desktop-image-hero-3.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.col-a {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-a .section-a {
+    width: 100%;
+    height: 43rem;
+    background-image: url(../images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.col-a .section-a .cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+.link {
+    display: block;
+    background-color: cornflowerblue;
+}
+
+.col-a .section-a .nav {
+    padding: 4.8rem 2.4rem;
+    display: flex;
+    position: relative;
+    z-index: 9;
+    /* background-color: var(--White); */
+    /* align-items: center; */
+}
+
+.col-a .section-a .empty {
+    display: none;
+    margin: 0 auto;
+}
+
+.col-a .section-a .logo {
+    /* display: inline; */
+    margin: auto;
+}
+
+.col-a .section-a .nav-text {
+    display: none;
+    margin: auto;
+}
+
+.col-a .section-a .nav-text a {
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    color: var(--Very-Dark-Gray);
+    font-weight: 700;
+    padding-bottom: .6rem;
+    text-transform: lowercase;
+    border-bottom: 3.6px solid hsla(0, 0%, 100%, 0);
+}
+
+.col-a .section-a .nav-text a:hover {
+
+    color: var(--Dark-Gray);
+    border-bottom: 3.6px solid hsla(0, 0%, 63%, 1);
+    transition: .5s;
+}
+
+.col-a .section-a .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 11rem;
+    height: 6rem;
+}
+
+.col-a .section-a .direction {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    font-size: 5rem;
+    color: var(--White);
+    background-color: var(--Black);
+}
+
+.col-a .section-a .direction:hover {
+    background-color: var(--Very-Dark-Gray);
+    transition: .5s;
+}
+
+.col-a .section-b {
+    width: 100%;
+    padding: 6rem 3rem;
+    background-color: var(--White);
+}
+
+.col-a .section-b h2 {
+    font-size: 2.6rem;
+    line-height: 4rem;
+    text-align: left;
+    padding: 1.2rem 0;
+    font-weight: 900;
+    color: var(--Very-Dark-Gray);
+}
+
+.col-a .section-b p {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 2.4rem;
+    padding: 1.2rem 0;
+    font-weight: 500;
+    color: var(--Dark-Gray);
+}
+
+.col-a .section-b a {
+    font-size: 1.8rem;
+    letter-spacing: 1.2rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Gray);
+}
+
+.col-b {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-b .img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-b .section-a {
+    width: 100%;
+}
+
+.col-b .section-b {
+    width: 100%;
+    height: auto;
+    padding: 4.4rem 2.8rem;
+    background-color: var(--White);
+}
+
+.col-b .section-b h4 {
+    font-size: 1.2rem;
+    letter-spacing: .6rem;
+    padding: 1.2rem 0;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Gray);
+}
+
+.col-b .section-b p {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--Dark-Gray);
+}
+
+.col-b .section-c {
+    width: 100%;
+    height: 23rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .show {
+        display: none!important;
+    }
+
+    .hide {
+        display: initial!important;
+    }
+
+    .blur {
+        display: none;
+        }
+    
+    .col-a {
+        flex-direction: row;
+    }
+    
+    .col-a .section-a {
+        flex: 58%;
+        width: 58%;
+        height: auto;
+        background-image: unset;
+    }
+    
+    .col-a .section-a .nav {
+        padding: 4.8rem 0 0 4.8rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .col-a .section-a .logo {
+        display: inline;
+        margin: 0 1.8rem;
+    }
+    
+    .col-a .section-a .nav-text {
+        display: inline;
+        margin: 0;
+    }
+    
+    .col-a .section-a .nav-text a {
+        color: var(--White);
+        }
+    
+    .col-a .section-a .nav-text a:hover {
+        color: var(--White);
+        border-bottom: 3.6px solid hsla(0, 0%, 100%, 1);
+    }
+    
+    .col-a .section-b {
+        flex: 42%;
+        width: 42%;
+        min-height: 53rem;
+        position: relative;
+        padding: 7.5rem;
+    }
+    
+    .col-a .section-b h2 {
+        font-size: 3rem;
+        line-height: 5rem;
+        color: var(--Very-Dark-Gray);
+    }
+    
+    .col-a .section-b a {
+        margin: 2rem 0;
+    }
+    
+    .arrow {
+        display: inline;
+    }
+    
+    .col-a .section-b .button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* width: 16rem; */
+        width: 26.3%;
+        height: 8rem;
+    }
+    
+    .col-a .section-b .direction {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 50%;
+        font-size: 5rem;
+        color: var(--White);
+        background-color: var(--Black);
+    }
+    
+    .col-a .section-b .direction:hover {
+        background-color: var(--Very-Dark-Gray);
+        transition: .5s;
+    }
+    
+    .col-b {
+        flex-direction: row;
+    }
+    
+    .col-b .section-a {
+        flex: 29%;
+        width: 29%;
+        height: auto;
+    }
+    
+    .col-b .section-b {
+        flex: 40%;
+        width: 40%;
+        padding: 5rem 4rem;
+    }
+    
+    .col-b .section-b h4 {
+        margin: 1.2rem 0;
+        padding: 0;
+    }
+    
+    .col-b .section-c {
+        flex: 31%;
+        width: 31%;
+        height: auto;
+    }
+    
+@media only screen and (min-width: 1400px) {
+    html {
+        font-size: 10px
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .col-a .section-b {
+        padding: 10rem;
+    }
+    .col-a .section-b h2 {
+        font-size: 3.6rem;
+    }
+}
+}
